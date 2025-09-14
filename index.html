@@ -1,70 +1,98 @@
 <!doctype html>
 <html lang="ru">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Art pause — лекции об искусстве, литературе и истории</title>
-<link rel="stylesheet" href="styles.css">
-<script defer src="scripts.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Art pause — лекции об искусстве, литературе и истории</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
 </head>
 <body>
 <div class="container">
-<header class="header">
-<img src="favicon.svg" class="logo" alt="Art pause">
-<div class="title">Art pause</div>
-<nav class="nav"><a href="#lectures">Лекции</a><a href="#about">О проекте</a><a href="#contact">Контакты</a></nav>
-</header>
-<section class="hero">
-<img src="assets/cover.svg" alt="Art pause cover">
-<div class="hero-text">Там, где кончается кисть<br><span>Авторские лекции Ольги Федоровской.</span></div>
-</section>
-<section id="lectures" class="section">
-<h2 class="h2">Лекции</h2>
-<input id="q" type="search" placeholder="Поиск по темам..." oninput="filterLectures()">
-<div class="grid">
 
-  <article class="card" data-card data-tags="анна ярославна франция киевская русь средневековье">
-    <a href="https://youtu.be/YAJPMhlDSFM" target="_blank">
-      <div class="thumb">
-        <img src="https://img.youtube.com/vi/YAJPMhlDSFM/0.jpg" alt="Анна Ярославна и 33 короля. Тайны Реймсского собора">
-      </div>
-    </a>
-    <div class="body">
-      <h3>История собора и тайны архитектуры</h3>
-      <p class="desc">Реймс — город, где короновали французских королей, где сквозь готические витражи светит история.</p>
+  <header class="header">
+    <img src="favicon.svg" class="logo" alt="Art pause">
+    <div class="title">Art pause</div>
+    <nav class="nav">
+      <a href="#lectures">Лекции</a>
+      <a href="#about">О проекте</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </header>
+
+  <!-- Баннер -->
+  <section class="hero">
+    <img src="assets/banner.jpg" alt="Art pause banner">
+    <div class="hero-text">
+      Там, где кончается кисть<br>
+      <span>Авторские лекции Ольги Федоровской.</span>
     </div>
-  </article>
+  </section>
 
-  <article class="card" data-card data-tags="гентский алтарь ван эйк кража">
-    <a href="https://youtu.be/ZwnLyJ_kHMc" target="_blank">
-      <div class="thumb">
-        <img src="https://img.youtube.com/vi/ZwnLyJ_kHMc/0.jpg" alt="Код Ван Эйка. Кража, деньги и распил: приключения Гентского алтаря">
-      </div>
-    </a>
-    <div class="body">
-      <h3>Код Ван Эйка. Кража, деньги и распил</h3>
-      <p class="desc">Почти сто лет мир пытается разгадать загадку исчезнувшей части Гентского алтаря. Этот шедевр пережил иконоборцев, революции, пожары и нацистскую охоту за искусством.</p>
+  <!-- Лекции -->
+  <section id="lectures" class="section">
+    <h2 class="h2">Лекции</h2>
+    <input id="q" type="search" placeholder="Поиск по темам..." oninput="filterLectures()">
+    
+    <div class="grid">
+
+      <!-- Карточка 1 -->
+      <article class="card" data-card data-tags="анна ярославна франция киевская русь средневековье">
+        <a href="https://youtu.be/YAJPMhlDSFM" target="_blank">
+          <div class="thumb">
+            <img src="https://img.youtube.com/vi/YAJPMhlDSFM/0.jpg" alt="Анна Ярославна и 33 короля. Тайны Реймсского собора">
+          </div>
+        </a>
+        <div class="body">
+          <h3>История собора и тайны архитектуры</h3>
+          <p class="desc">Реймс — город, где короновали французских королей, где сквозь готические витражи светит история.</p>
+        </div>
+      </article>
+
+      <!-- Карточка 2 -->
+      <article class="card" data-card data-tags="гентский алтарь ван эйк кража">
+        <a href="https://youtu.be/ZwnLyJ_kHMc" target="_blank">
+          <div class="thumb">
+            <img src="https://img.youtube.com/vi/ZwnLyJ_kHMc/0.jpg" alt="Код Ван Эйка. Кража, деньги и распил: приключения Гентского алтаря">
+          </div>
+        </a>
+        <div class="body">
+          <h3>Код Ван Эйка. Кража, деньги и распил</h3>
+          <p class="desc">Почти сто лет мир пытается разгадать загадку исчезнувшей части Гентского алтаря. Этот шедевр пережил иконоборцев, революции, пожары и нацистскую охоту за искусством.</p>
+        </div>
+      </article>
+
+      <!-- Карточка 3 -->
+      <article class="card" data-card data-tags="лувр мода выставка louvre couture костюм история">
+        <a href="https://youtu.be/LyWQrdfF22Q" target="_blank">
+          <div class="thumb">
+            <img src="https://img.youtube.com/vi/LyWQrdfF22Q/0.jpg" alt="О чём молчат платья: модный приговор в Лувре">
+          </div>
+        </a>
+        <div class="body">
+          <h3>О чём молчат платья: модный приговор в Лувре</h3>
+          <p class="desc">Что, если платья умеют говорить? А если они молчат — то о чём?<br>
+          Это видео — не просто экскурсия по выставке Louvre Couture. Это разговор о тайнах, спрятанных в складках шелка, шипах металла и линиях силуэтов.</p>
+        </div>
+      </article>
+
     </div>
-  </article>
+  </section>
 
-  <article class="card" data-card data-tags="лувр мода выставка louvre couture костюм история">
-    <a href="https://youtu.be/LyWQrdfF22Q" target="_blank">
-      <div class="thumb">
-        <img src="https://img.youtube.com/vi/LyWQrdfF22Q/0.jpg" alt="О чём молчат платья: модный приговор в Лувре">
-      </div>
-    </a>
-    <div class="body">
-      <h3>О чём молчат платья: модный приговор в Лувре</h3>
-      <p class="desc">Что, если платья умеют говорить? А если они молчат — то о чём?<br>
-      Это видео — не просто экскурсия по выставке Louvre Couture. Это разговор о тайнах, спрятанных в складках шелка, шипах металла и линиях силуэтов.</p>
-    </div>
-  </article>
+  <!-- О проекте -->
+  <section id="about" class="section">
+    <h2 class="h2">О проекте</h2>
+    <p>Мы говорим о том, как литература, искусство и история переплетаются и помогают понять прошлое, настоящее и самих себя.</p>
+  </section>
 
-</div>
+  <!-- Контакты -->
+  <section id="contact" class="section">
+    <h2 class="h2">Контакты</h2>
+    <p>YouTube: <a href="https://www.youtube.com/@art-pause">Art pause</a></p>
+  </section>
 
-</section>
-<section id="about" class="section"><h2 class="h2">О проекте</h2><p>Мы говорим о том, как литература, искусство и история переплетаются и помогают понять прошлое, настоящее и самих себя.</p></section>
-<section id="contact" class="section"><h2 class="h2">Контакты</h2><p>YouTube: <a href="https://www.youtube.com/@art-pause">Art pause</a></p></section>
-<footer class="footer">© 2025 Art pause · «Там, где кончается кисть»</footer>
+  <footer class="footer">© 2025 Art pause · «Там, где кончается кисть»</footer>
+
 </div>
 </body>
 </html>
