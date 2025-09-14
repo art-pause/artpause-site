@@ -1,7 +1,16 @@
-function filterLectures(){
-  const q=document.getElementById('q').value.toLowerCase().trim();
-  document.querySelectorAll('[data-card]').forEach(c=>{
-    const hay=(c.dataset.tags+' '+c.querySelector('h3').innerText+' '+c.querySelector('.desc')?.innerText).toLowerCase();
-    c.style.display=hay.includes(q)?'':'';
+function filterLectures() {
+  const query = document.getElementById("q").value.toLowerCase();
+  const cards = document.querySelectorAll("[data-card]");
+
+  cards.forEach(card => {
+    const tags = card.getAttribute("data-tags").toLowerCase();
+    const title = card.querySelector("h3").innerText.toLowerCase();
+    const desc = card.querySelector(".desc").innerText.toLowerCase();
+
+    if (tags.includes(query) || title.includes(query) || desc.includes(query)) {
+      card.style.display = "";
+    } else {
+      card.style.display = "none";
+    }
   });
 }
