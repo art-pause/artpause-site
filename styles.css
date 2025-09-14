@@ -95,3 +95,14 @@ a:hover {text-decoration:underline}
 .h2 {font-size:22px;margin:0 0 12px;color:var(--accent)}
 
 .footer {margin:28px 0;color:var(--muted);font-size:14px;text-align:center}
+
+/* Адаптив для меню на телефоне */
+@media (max-width: 600px) {
+  .nav {
+    gap: 10px;
+    font-size: 13px;
+  }
+  .title {
+    font-size: 22px;
+  }
+}
