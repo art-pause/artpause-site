@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Art pause — лекции об искусстве, литературе и истории</title>
+<link rel="stylesheet" href="styles.css">
+<script defer src="scripts.js"></script>
+</head>
+<body>
+<div class="container">
+<header class="header">
+<img src="favicon.svg" class="logo" alt="Art pause">
+<div class="title">Art pause</div>
+<nav class="nav"><a href="#lectures">Лекции</a><a href="#about">О проекте</a><a href="#contact">Контакты</a></nav>
+</header>
+<section class="hero">
+<img src="assets/cover.svg" alt="Art pause cover">
+<div class="hero-text">Там, где кончается кисть — начинаются слова.<br><span>Авторские лекции Ольги Федоровской.</span></div>
+</section>
+<section id="lectures" class="section">
+<h2 class="h2">Лекции</h2>
+<input id="q" type="search" placeholder="Поиск по темам..." oninput="filterLectures()">
+<div class="grid">
+<article class="card" data-card data-tags="реймс собор готика жанна">
+<div class="thumb">Реймсский собор</div><div class="body"><h3>Символика готики</h3><p class="desc">Архитектура как текст культуры.</p></div></article>
+<article class="card" data-card data-tags="нотрд ам витражи">
+<div class="thumb">Нотр-Дам</div><div class="body"><h3>Нотр-Дам де Пари</h3><p class="desc">Иконография и реставрация.</p></div></article>
+<article class="card" data-card data-tags="укийо-э моне ван гог">
+<div class="thumb">Укийо-э</div><div class="body"><h3>Японские гравюры</h3><p class="desc">Влияние на Европу.</p></div></article>
+</div>
+</section>
+<section id="about" class="section"><h2 class="h2">О проекте</h2><p>Мы говорим о том, как литература, искусство и история переплетаются и помогают понять прошлое, настоящее и самих себя.</p></section>
+<section id="contact" class="section"><h2 class="h2">Контакты</h2><p>YouTube: <a href="https://www.youtube.com/@art-pause">Art pause</a></p></section>
+<footer class="footer">© 2025 Art pause · «Там, где кончается кисть»</footer>
+</div>
+</body>
+</html>
