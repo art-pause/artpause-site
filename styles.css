@@ -46,12 +46,21 @@ a:hover {text-decoration:underline}
   border-radius: 8px;
   font-size: 18px;
   color: var(--text);
+  max-width: 80%; /* чтобы текст не растягивался слишком широко */
+}
+
+/* Адаптив для баннера */
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
 }
 
 /* Сетка лекций */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 24px;
 }
 
