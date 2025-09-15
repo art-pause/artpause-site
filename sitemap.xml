@@ -5,16 +5,5 @@
     <lastmod>2025-09-15</lastmod>
     <priority>1.0</priority>
   </url>
-  <url>
-    <loc>https://art-pause.github.io/artpause-site/#lectures</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://art-pause.github.io/artpause-site/#about</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://art-pause.github.io/artpause-site/#contact</loc>
-    <priority>0.6</priority>
-  </url>
 </urlset>
+
