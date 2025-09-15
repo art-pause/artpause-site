@@ -27,17 +27,22 @@ a:hover {text-decoration:underline}
 .header {
   display:flex;
   align-items:center;
-  justify-content:space-between; /* название слева, меню справа */
+  justify-content:space-between; /* название + иконки слева, меню справа */
   padding:18px 0;
 }
 
 /* логотип скрыт */
 .logo {display:none;}
 
+.title-block {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
 .title {
   font-size:28px;
   color:var(--accent);
-  margin-right:auto; /* сдвигаем влево */
 }
 
 .nav {
@@ -45,6 +50,29 @@ a:hover {text-decoration:underline}
   justify-content:space-between;
   gap:30px; /* больше расстояние между пунктами */
   font-size:15px;
+}
+
+/* Соцсети */
+.social-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.social-links a {
+  display: inline-block;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+  transition: transform .15s ease, opacity .15s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+  opacity: .9;
 }
 
 /* Баннер */
@@ -123,34 +151,4 @@ a:hover {text-decoration:underline}
   font-size:22px;
   margin:0 0 12px;
   color:var(--accent);
-}
-
-/* Соцсети */
-.social-links {
-  display: flex;
-  gap: 24px;
-  justify-content: center;
-  margin-top: 12px;
-  flex-wrap: wrap;
-}
-
-.social-link {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 14px;
-  background: var(--accent);
-  color: #fff;
-  border-radius: 8px;
-  font-size: 14px;
-  transition: background 0.2s;
-}
-
-.social-link:hover {
-  background: #5c4630;
-}
-
-.icon {
-  width: 18px;
-  height: 18px;
 }
