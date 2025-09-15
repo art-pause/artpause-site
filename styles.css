@@ -89,14 +89,15 @@ a:hover {text-decoration:underline}
 }
 .hero-text {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
-  background: rgba(244, 236, 216, 0.7);
+  bottom: 5%;      /* всегда сидит ближе к низу */
+  left: 5%;
+  right: 5%;       /* ограничиваем ширину */
+  background: rgba(244, 236, 216, 0.75);
   padding: 12px 18px;
   border-radius: 8px;
   font-size: 18px;
   color: var(--text);
-  max-width: 80%; /* чтобы текст не растягивался слишком широко */
+  max-width: 90%;  /* чтобы текст не растягивался слишком широко */
 }
 
 /* Адаптив для баннера */
@@ -104,6 +105,7 @@ a:hover {text-decoration:underline}
   .hero-text {
     font-size: 14px;
     padding: 8px 12px;
+    bottom: 4%;   /* чуть ниже на мобильных */
   }
 }
 
