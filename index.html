@@ -162,29 +162,49 @@
   </section>
 
   <!-- Контакты -->
-  <section id="contact" class="section">
-    <h2 class="h2">Контакты</h2>
-    <p>Вы можете связаться со мной через форму — сообщение придёт на почту проекта.</p>
+<section id="contact" class="section">
+  <h2 class="h2">Контакты</h2>
 
-    <form action="https://formspree.io/f/manarwbq" method="POST" class="contact-form">
-      <label>
-        Ваше имя:
-        <input type="text" name="name" required>
-      </label>
+  <p>Вы можете связаться со мной через форму — письмо придёт прямо на почту проекта.</p>
 
-      <label>
-        Ваш email:
-        <input type="email" name="email" required>
-      </label>
+  <!-- Кнопка -->
+  <button id="contact-btn" 
+          style="background:#8b5e3c;color:#fff;padding:8px 16px;border:none;
+                 border-radius:6px;cursor:pointer;font-size:16px;">
+    Написать сообщение
+  </button>
 
-      <label>
-        Сообщение:
-        <textarea name="message" rows="5" required></textarea>
-      </label>
+  <!-- Скрытая форма -->
+  <form id="contact-form" action="https://formspree.io/f/manarwbq" method="POST"
+        style="display:none;margin-top:20px;">
 
-      <button type="submit">Отправить</button>
-    </form>
-  </section>
+    <label>Ваше имя:</label><br>
+    <input type="text" name="name" required
+           style="width:260px;padding:6px;margin-bottom:10px;"><br>
+
+    <label>Ваш email:</label><br>
+    <input type="email" name="email" required
+           style="width:260px;padding:6px;margin-bottom:10px;"><br>
+
+    <label>Сообщение:</label><br>
+    <textarea name="message" required
+              style="width:320px;height:120px;padding:6px;margin-bottom:10px;"></textarea><br>
+
+    <button type="submit"
+            style="background:#8b5e3c;color:#fff;padding:8px 16px;border:none;
+                   border-radius:6px;cursor:pointer;font-size:16px;">
+      Отправить
+    </button>
+  </form>
+</section>
+
+<script>
+  document.getElementById("contact-btn").onclick = function() {
+    document.getElementById("contact-form").style.display = "block";
+    this.style.display = "none";
+  };
+</script>
+
 
   <section id="legal" class="section">
     <h2 class="h2">Impressum</h2>
